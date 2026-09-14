@@ -64,7 +64,7 @@ export const StorySection: React.FC<StorySectionProps> = ({ onDiscoverWtl }) => 
             {/* CTA Button */}
             <div>
               <a
-                href="/about"
+                href="#wtl-story"
                 id="story-discover-cta"
                 onClick={(e) => {
                   e.preventDefault();

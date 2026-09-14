@@ -34,12 +34,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDealerModal, onNavigateSec
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { label: 'Bicycles', href: '/bicycles', sectionId: 'bicycles-range' },
-    { label: 'Collections', href: '/collections', sectionId: 'featured-showcase' },
-    { label: 'Technology', href: '/technology', sectionId: 'engineering' },
-    { label: 'About', href: '/about', sectionId: 'wtl-story' },
-    { label: 'Stories', href: '/stories', sectionId: 'stories' },
-    { label: 'Dealers', href: '/dealers', sectionId: 'dealers' },
+    { label: 'Bicycles', href: '#bicycles-range', sectionId: 'bicycles-range' },
+    { label: 'Collections', href: '#featured-showcase', sectionId: 'featured-showcase' },
+    { label: 'Technology', href: '#engineering', sectionId: 'engineering' },
+    { label: 'About', href: '#wtl-story', sectionId: 'wtl-story' },
+    { label: 'Stories', href: '#stories', sectionId: 'stories' },
+    { label: 'Dealers', href: '#dealers', sectionId: 'dealers' },
   ];
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, link: typeof navLinks[0]) => {
@@ -67,8 +67,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDealerModal, onNavigateSec
           <div className="flex items-center justify-between">
             {/* LEFT: WTL Logo */}
             <a
-              href="/"
+              href="#top"
               id="nav-logo"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
               className="group flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E5A910] rounded"
             >
               <WtlLogo className="h-8 sm:h-9" showTagline />

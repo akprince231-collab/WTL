@@ -44,7 +44,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDealerModal, onNavigateSec
           
           {/* Brand & Manifesto (Cols 1-4) */}
           <div className="md:col-span-4">
-            <a href="/" className="inline-block mb-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E5A910] rounded">
+            <a
+              href="#top"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="inline-block mb-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E5A910] rounded"
+            >
               <WtlLogo className="h-9" showTagline />
             </a>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm mb-6">

@@ -35,7 +35,7 @@ export const StoriesGrid: React.FC = () => {
           </div>
 
           <a
-            href="/stories"
+            href="#stories"
             onClick={(e) => e.preventDefault()}
             className="group inline-flex items-center gap-2 text-sm font-display font-bold uppercase tracking-wider text-slate-300 hover:text-[#E5A910] transition-colors"
           >
