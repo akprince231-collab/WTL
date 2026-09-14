@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-tech {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, monospace;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Custom subtle noise and technical grid backgrounds */
+.bg-grid-tech {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(229, 169, 16, 0.12) 1px, transparent 1px);
+}
+
+.bg-diagonal-stripes {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(229, 169, 16, 0.03),
+    rgba(229, 169, 16, 0.03) 2px,
+    transparent 2px,
+    transparent 14px
+  );
+}
+
+/* Subtle glow effects using WTL warm gold */
+.glow-gold-sm {
+  box-shadow: 0 0 24px rgba(229, 169, 16, 0.15);
+}
+
+.glow-navy {
+  box-shadow: 0 20px 45px -15px rgba(6, 11, 20, 0.8);
+}

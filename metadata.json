@@ -1,0 +1,6 @@
+{
+  "name": "WTL Bikes",
+  "description": "High-end performance bicycles engineered for road, trail, and adventure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
